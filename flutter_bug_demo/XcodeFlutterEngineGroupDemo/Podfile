@@ -1,0 +1,14 @@
+use_frameworks!
+
+inhibit_all_warnings!
+
+platform :ios, '9.0'
+target 'XcodeFlutterEngineGroupDemo' do
+    flutter_application_path = './../dart_demo'
+    load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+    install_all_flutter_pods(flutter_application_path)
+end
+
+
+
+
